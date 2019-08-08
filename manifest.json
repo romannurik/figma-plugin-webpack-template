@@ -1,0 +1,7 @@
+{
+  "name": "Demo plugin",
+  "version": "0.5.0",
+  "html": "ui.html",
+  "script": "main.js",
+  "id": "TODO: get a plugin ID and put it here"
+}

@@ -1,0 +1,28 @@
+{
+    "name": "demo-plugin",
+    "version": "1.0.0",
+    "description": "",
+    "main": "none.js",
+    "scripts": {
+        "__build-base__": "mkdir -p ./dist && cp ./manifest.json ./dist",
+        "build": "npm run __build-base__ && webpack-cli",
+        "watch": "npm run __build-base__ && webpack-cli --watch"
+    },
+    "author": "TODO",
+    "license": "Apache-2.0",
+    "devDependencies": {
+        "@babel/core": "^7.5.5",
+        "babel-loader": "^8.0.6",
+        "babel-preset-env": "^1.7.0",
+        "css-loader": "^3.1.0",
+        "html-webpack-inline-source-plugin": "0.0.10",
+        "html-webpack-plugin": "^3.2.0",
+        "mini-css-extract-plugin": "^0.8.0",
+        "node-sass": "^4.12.0",
+        "sass-loader": "^7.1.0",
+        "ts-loader": "^6.0.4",
+        "typescript": "^3.5.3",
+        "webpack": "^4.36.1",
+        "webpack-cli": "^3.3.6"
+    }
+}
