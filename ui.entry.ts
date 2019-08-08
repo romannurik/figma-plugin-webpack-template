@@ -5,6 +5,6 @@ import './ui.scss';
 parent.postMessage({ pluginMessage: {}}, '*');
 
 window.onmessage = async event => {
-	let message = event.data.pluginMessage;
+  let message = event.data.pluginMessage;
   // TODO
 };

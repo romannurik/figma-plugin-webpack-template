@@ -5,8 +5,10 @@ const HtmlWebpackInlineSourcePlugin = require('html-webpack-inline-source-plugin
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  mode: 'development',
-  devtool: '', // force not using 'eval' which doesn't recognize __html__ and other globals
+  mode: 'development', // TODO swap 
+  mode: (process.env.NODE_ENV === 'production') ? 'production' : 'development',
+  // force not using 'eval' which doesn't recognize __html__ and other globals
+  devtool: (process.env.NODE_ENV === 'production') ? '' : 'inline-source-map',
   entry: {
     main: './main.entry.ts',
     ui: './ui.entry.ts',
